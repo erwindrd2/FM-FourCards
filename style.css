@@ -49,10 +49,16 @@ body {
 }
 
 .hero {
+  text-align: center;
+  margin: auto auto;
   margin-top: 56px;
-  margin-left: 30px;
-  margin-right: 30px;
   margin-bottom: 60px;
+}
+@media (width > 41.1764705882rem) {
+  .hero {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 .hero__subtitle {
   font-family: "Poppins", sans-serif;
@@ -82,6 +88,12 @@ body {
   color: hsl(234, 12%, 34%);
   margin-bottom: 1rem;
 }
+@media (width > 41.1764705882rem) {
+  .hero__title {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 @media (width >= 43.75rem) {
   .hero__title {
     text-align: center;
@@ -101,6 +113,12 @@ body {
   letter-spacing: 0px;
   color: hsl(234, 12%, 34%);
 }
+@media (width < 41.1764705882rem) {
+  .hero__description {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 @media (width >= 43.75rem) {
   .hero__description {
     text-align: center;
@@ -108,13 +126,12 @@ body {
 }
 
 .cards {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: auto auto;
+  display: grid;
+  justify-content: center;
 }
 @media (width >= 43.75rem) {
   .cards {
-    margin-left: 54px;
-    margin-right: 54px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +142,8 @@ body {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin: auto auto;
+    justify-content: center;
   }
 }
 

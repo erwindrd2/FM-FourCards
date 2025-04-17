@@ -115,10 +115,15 @@ body {
 }
 .hero {
 
+    text-align: center;
+    margin: auto auto;
     margin-top: 56px;
+    margin-bottom: 60px;
+
+    @media (width>calc(700 / 17 * 1rem)){
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 60px;;
+}
 
     &__subtitle {
         @include textpreset2($font-size: 1.5rem);
@@ -134,6 +139,11 @@ body {
         @include textpreset1($font-size: 1.5rem);
         margin-bottom: $space-16;
 
+        @media (width>calc(700 / 17 * 1rem)) {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
             @media (width >=calc(700 / 16 * 1rem)) {
             text-align: center;
                     @include textpreset1($font-size: 2.25rem);
@@ -144,6 +154,11 @@ body {
     &__description {
         @include textpreset4;
 
+        @media (width<calc(700 / 17 * 1rem)) {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
            @media (width >=calc(700 / 16 * 1rem)) {
             text-align: center;
                     
@@ -153,12 +168,13 @@ body {
 }
 
 .cards {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: auto auto;
+    display: grid;
+    justify-content: center;
+    
 
     @media (width >=calc(700 / 16 * 1rem)) {
-        margin-left: 54px;
-        margin-right: 54px;
+      
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -168,6 +184,8 @@ body {
             display: flex;
             flex-direction: row;
             gap: $space-32;
+            margin: auto auto;
+            justify-content: center;
            
            
            
